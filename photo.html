@@ -1,54 +1,50 @@
 <!doctype html>
  
-<html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Title</title>
-<meta name="language" content="en" /> 
+ <html>
+ <head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <title>Title</title>
+ <meta name="language" content="en" /> 
 
-<meta name="description" content="" /> 
+ <meta name="description" content="" /> 
 
-<meta name="keywords" content="" />
-<style type="text/css">
-ul li {list-style: none; margin-bottom: 15px;}
-ul li img {display: block;}
-ul li span {display: block;}
-</style>
-</head>
-<body>
-
-  <?php
-
-  // open this directory 
-  $myDirectory = opendir("images/large");
-
-  // get each entry
-  while($entryName = readdir($myDirectory)) {
-  $dirArray[] = $entryName;
-  }
-
-  // close directory
-  closedir($myDirectory);
-
-  //	count elements in array
-  $indexCount	= count($dirArray);
-
-  ?>
-
-  <ul>
-
-  <?php
-  // loop through the array of files and print them all in a list
-  for($index=0; $index < $indexCount; $index++) {
-  $extension = substr($dirArray[$index], -3);
-  if ($extension == 'jpg'){ // list only jpgs
-  echo '<li><img src="images/' . $dirArray[$index] . '" alt="Image" /><span>' . $dirArray[$index] . '</span>';
-  } 
-  }
-  ?>
-
-  </ul> 
-
-
- </body>
-</html>
+ <meta name="keywords" content="" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap" rel="stylesheet">
+ <style type="text/css">
+ .container {display: flex; flex-wrap: wrap; justify-content: center; align-content: center; width:80%}
+ .img {width: 210px; height: 150px; object-fit: cover; background-color: aqua;}
+ .img:hover {filter:drop-shadow(5px 5px 15px black)}
+  .main {display: flex; height: 100vh; justify-content: center; align-items: center; flex-direction: column;}
+  h1 {font-family: "Kadwa", serif; font-weight: 700; font-style: normal;font-size: 32px;}
+ </style>
+ </head>
+ <body>
+  <div class="main">
+    <h1>Picture galery</h1>
+    <div class="container">
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+    </div>
+  </div>
+  </body>
+ </html>
