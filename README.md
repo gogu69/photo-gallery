@@ -23,9 +23,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](preview\desktop-preview.jpg)
-![](preview\small-screen-preview1.jpg)
-![](preview\small-screen-preview2.jpg)
+![](./preview/desktop-preview.jpg)
+![](./preview/small-screen-preview1.jpg)
+![](./preview/small-screen-preview2.jpg)
 
 ### Built with
 
